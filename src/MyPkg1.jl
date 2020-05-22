@@ -1,5 +1,10 @@
 module MyPkg1
 
-greet() = print("Hello World!")
+using ForwardDiff
+
+# greet() = print("Hello World!")
+include("Foo.jl")
+
+export f1
 
 end # module
